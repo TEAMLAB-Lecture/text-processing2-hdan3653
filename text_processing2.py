@@ -91,7 +91,7 @@ def to_camel_case(underscore_str):
         else:
             flag = True
 
-    if len(camelcase_str) == len(underscore_str):
+    if underscore_str.find('_') < 0:
         camelcase_str = underscore_str
 
     return camelcase_str
